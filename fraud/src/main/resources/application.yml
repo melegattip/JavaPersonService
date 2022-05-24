@@ -1,11 +1,11 @@
 server:
-  port: 8080
+  port: 8082
 
 spring:
   application:
-    name: person
+    name: leader
   datasource:
-    url: jdbc:mysql://localhost:6033/person
+    url: jdbc:mysql://localhost:6033/leader
     username: ekklesia
     password: rootadmin
     driver-class-name: com.mysql.cj.jdbc.Driver

@@ -9,12 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="personService" />
         <module name="person" />
+        <module name="fraud" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ekklesiaServices" target="16" />
       <module name="person" target="16" />
-      <module name="personService" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>
