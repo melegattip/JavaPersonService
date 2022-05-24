@@ -8,8 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="personService" />
+        <module name="leader" />
         <module name="person" />
-        <module name="fraud" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
