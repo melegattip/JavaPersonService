@@ -1,4 +1,7 @@
 package com.ekklesiaServices.leader;
 
-public interface LeaderCheckHistoryRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface LeaderCheckHistoryRepository
+        extends JpaRepository<LeaderCheckHistory, Integer> {
 }
