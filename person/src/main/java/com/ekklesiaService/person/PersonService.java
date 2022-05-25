@@ -2,11 +2,15 @@ package com.ekklesiaService.person;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import java.net.URI;
 
 @Service
 @AllArgsConstructor
 public class PersonService{
     private final PersonRepository personRepository;
+    private final RestTemplate restTemplate;
     public void registerPerson(PersonRegistrationRequest request) {
         Person person = Person.builder()
                 .firstName(request.firstName())
@@ -14,8 +18,11 @@ public class PersonService{
                 .email(request.email())
                 .phone(request.phone())
                 .build();
-        //todo: check if the email is valid
-        //todo: check if the email is not taken
-         personRepository.save(person);
+        personRepository.saveAndFlush(person);
+        LeaderCheckResponse leaderCheckRepsone = restTemplate.getForObject(
+                "http://localhost:8082/api/v1/leader-check/{personId}",
+                LeaderCheckResponse.class,
+                person.getId()
+        );
     }
 }
