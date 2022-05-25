@@ -1,4 +1,4 @@
-package com.ekklesiaService.person;
+package com.ekklesiaServices.person;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

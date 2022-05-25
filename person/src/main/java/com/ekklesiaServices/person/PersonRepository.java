@@ -1,4 +1,4 @@
-package com.ekklesiaService.person;
+package com.ekklesiaServices.person;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

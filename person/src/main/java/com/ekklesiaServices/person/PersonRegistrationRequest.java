@@ -1,4 +1,4 @@
-package com.ekklesiaService.person;
+package com.ekklesiaServices.person;
 
 public record PersonRegistrationRequest(
         String firstName,

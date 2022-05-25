@@ -11,7 +11,7 @@
 
   <modules>
     <module>person</module>
-      <module>fraud</module>
+      <module>leader</module>
   </modules>
 
   <name>ekklesiaServices</name>
