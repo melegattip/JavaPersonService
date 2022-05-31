@@ -18,7 +18,7 @@ public class PersonService{
                 .build();
         personRepository.saveAndFlush(person);
         LeaderCheckResponse leaderCheckRepsone = restTemplate.getForObject(
-                "http://localhost:8082/api/v1/leader-check/{personId}",
+                "http://LEADER/api/v1/leader-check/{personId}",
                 LeaderCheckResponse.class,
                 person.getId()
         );

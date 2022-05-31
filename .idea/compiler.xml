@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="personService" />
         <module name="leader" />
+        <module name="eureka-server" />
         <module name="person" />
       </profile>
     </annotationProcessing>
