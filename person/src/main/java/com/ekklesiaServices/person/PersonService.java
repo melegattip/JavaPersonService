@@ -23,4 +23,7 @@ public class PersonService{
                 person.getId()
         );
     }
+    public Person getPerson(int id){
+        return personRepository.getById(id);
+    }
 }
